@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-family: "Raleway";
+    font-size: 24px;
+    line-height: 1.1666;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+}
+
+.logo {
+    @media screen and (min-width: 1200px) {
+    align-items: center;
+    font-size: 26px;
+    line-height: 1.1923;
+    }
+}
+
+
+.header-page__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

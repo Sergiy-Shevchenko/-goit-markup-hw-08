@@ -1,0 +1,121 @@
+/*---mobile---*/
+.advant {
+
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.advant__title {
+    width: 450px;
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 15px;
+    }
+}
+
+.advant-list {
+    width: 100%;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.advant-list__img {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--button-background-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 190px;
+}
+
+.advant-list__name {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.1428;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.advant-list__text {
+
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    color: var(--text-title-color);
+    margin-top: 10px;
+
+}
+
+/*---tablet---*/
+
+.advant-list__img {
+    @media screen and (min-width: 768px) {
+        height: 120px;
+        width: 100%;
+        padding: 25px 142px;
+    }
+}
+
+/*-----desk-top---*/
+.advant,
+.advant-list {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.advant-list {
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
+    }
+}
+
+.advant__title {
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
+}
+
+.advant-list__img {
+    @media screen and (min-width: 1200px) {
+        height: 120px;
+        width: 100%;
+        padding: 25px 100px;
+    }
+}
+
+.advant-list__name {
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.1482;
+    }
+}
