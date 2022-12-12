@@ -4,12 +4,21 @@ footer {
     padding-bottom: 60px;
 }
 
-/*footer .container {
+.footer-tablet {
     @media screen and (min-width: 768px) {
+       display:flex; 
+    }
+    
+}
+
+
+
+footer .container {
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
 }
-}*/
+}
 
 .foot-link {
     display: flex;
@@ -32,16 +41,20 @@ footer {
 
 .link-social {
     margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-    margin-left: 70px;
-  }
-}
+    @media screen and (min-width: 768px) {
+     margin-left: 156px;   
+    }
 
-  .link-social-connect  {
     @media screen and (min-width: 1200px) {
     margin-left: 94px;
   }
 }
+
+  /*.link-social-connect  {
+    @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+  }
+}*/
   .foot-form {
     @media screen and (min-width: 1200px) {
     display: flex;
@@ -79,7 +92,15 @@ footer {
 
 .link-contacts {
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+         margin-left: 76px;
+    }
+         @media screen and (min-width: 1200px) {
+            width: 210px; 
+            margin-left: 15px;
+         }
 }
+
 .footer-list {
 text-align: center;
 }
@@ -113,6 +134,7 @@ text-align: center;
     line-height: 1.1428;
     letter-spacing: 0.03em;
     text-align: center;
+    align-items: center;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
@@ -137,8 +159,21 @@ text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    padding-right: 170px;
+    /*padding-right: 170px;*/
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        display: block;
+        align-items: center;
+        margin-left: 159px;
+        margin-right: 159px;
+    }
+         @media screen and (min-width: 1200px) {
+             display: block;
+             width: 320px;
+             align-items: center;
+             margin-left: 94px;
+             margin-right: 12px;
+         }
 }
 
 .button-footer {
@@ -162,4 +197,12 @@ text-align: center;
     border: none;
     margin-left: 125px;
     margin-right: 125px;
+    @media screen and (min-width: 768px) {
+        margin-left: 284px;
+        margin-right: 284px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
