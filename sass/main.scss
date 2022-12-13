@@ -2,8 +2,9 @@
 
 @import './utils/variables';
 @import './utils/basic';
+@import './components/header';
 @import './components/logo';
-
+@import './components/nav';
 
 @import './components/hero';
 @import './components/advant';
@@ -12,4 +13,5 @@
 @import './components/clients';
 @import './components/icon';
 @import './components/footer';
+@import './components/modal';
 
