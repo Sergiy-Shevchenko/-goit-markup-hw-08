@@ -22,7 +22,7 @@
 }
 
 .site-nav__link {
-    color: var(--text-color);
+    color: #212121;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -32,12 +32,12 @@
 
     &:hover,
     &:focus {
-        color: var(--text-active-color);
+        color: #2196f3;
     }
 
     &.current:hover,
     &.current:focus {
-        color: var(--text-color);
+        color: #212121;
     }
 
 }
@@ -60,7 +60,7 @@
 }
 }
 .nav .site-nav__link.current {
-    color: var(--text-active-color);
+    color: #2196f3;
 }
 
 .site-nav .site-nav__item+.site-nav__item {

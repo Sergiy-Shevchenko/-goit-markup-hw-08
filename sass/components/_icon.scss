@@ -23,12 +23,12 @@
 
     &:hover,
     &:focus {
-        background-color: var(--text-active-color);
+        background-color: #2196F3;
     }
 
     &:hover .team-soc__icon,
     &:focus .team-soc__icon {
-        fill: var(--background-color);
+        fill: #FFFFFF;
     }
 }
 

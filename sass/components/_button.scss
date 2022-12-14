@@ -19,8 +19,8 @@
       letter-spacing: 0.03em;
       cursor: pointer;
       display: inline-block;
-      color: var(--text-color);
-      background-color: var(--button-background-color);
+      color: #212121;
+      background-color: #f5f4fa;
       border: 1px solid transparent;
       border-radius: 4px;
       padding: 6px 22px;
@@ -31,8 +31,8 @@
 
       &:hover,
       &:focus {
-          color: var(--background-color);
-          background-color: var(--text-active-color);
+          color: #FFFFFF;
+          background-color: #2196f3;
       }
   }
 

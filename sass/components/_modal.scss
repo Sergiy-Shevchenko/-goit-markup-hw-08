@@ -90,14 +90,14 @@
 
     &:hover,
     &:focus {
-        border-color: var(--text-active-color);
+        border-color: #2196f3;
         border: 1px solid #2196f3;
         border-radius: 4px;
     }
 
     &:hover+.icon-modal,
     &:focus+.icon-modal {
-        fill: var(--text-active-color);
+        fill: #2196f3;
     }
 }
 
@@ -116,7 +116,7 @@
 
     &:hover,
     &:focus {
-        border-color: var(--text-active-color);
+        border-color: #2196f3;
         border: 1px solid #2196f3;
         border-radius: 4px;
     }
@@ -246,7 +246,7 @@ display: flex;
 .modal-check:checked+.check-text div {
     background-color: #2196f3;
     border: #2196f3;
-    fill: var(--background-color);
+    fill: #FFFFFF;
 }
 
 .polisy-link {

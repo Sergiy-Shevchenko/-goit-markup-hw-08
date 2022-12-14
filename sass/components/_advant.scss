@@ -10,7 +10,7 @@
 }
 
 .advant__title {
-    width: 450px;
+    max-width: 450px;
 
     &:not(:last-child) {
         @media screen and (max-width: 767px) {
@@ -45,12 +45,12 @@
     width: 100%;
     height: 120px;
     border-radius: 4px;
-    background-color: var(--button-background-color);
+    background-color: #f5f4fa;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    padding: 25px 190px;
+    padding: 25px;
 }
 
 .advant-list__name {
@@ -60,7 +60,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: #212121;
 }
 
 .advant-list__text {
@@ -69,7 +69,7 @@
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
-    color: var(--text-title-color);
+    color: #757575;
     margin-top: 10px;
 
 }

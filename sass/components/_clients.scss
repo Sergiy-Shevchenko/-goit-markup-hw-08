@@ -46,7 +46,7 @@
      }
 
      &:hover .clients-list__icon {
-         fill: var(--text-active-color);
+         fill: #2196f3;
      }
  }
 
@@ -88,6 +88,6 @@
      &:hover .clients-list__icon,
      &:focus,
      .clients-list__link:focus .clients-list__icon {
-         fill: var(--text-active-color);
+         fill: #2196f3;
      }
  }
