@@ -210,34 +210,18 @@ display: flex;
     color: #757575;
     padding: 0;
     border: 1px solid #212121;
-    border-radius: 2px;  
-   
-}
-
-.check-text div {
-@media screen and (min-width: 1200px) {
-    
-    display: flex;
-        align-items: center;
-        width: 16px;
-        height: 15px;
+    border-radius: 2px;
+       @media screen and (min-width: 1200px) {
+      
+        
         font-size: 14px;
         line-height: 1.7142;
         justify-content: center;
-        fill: transparent;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        cursor: pointer;
-        color: #757575;
-        padding: 0;
-        border: 1px solid #212121;
-        border-radius: 2px;
-
+        
 
 }
 }
+
 .check-text {
     display: flex;
     position: relative;
