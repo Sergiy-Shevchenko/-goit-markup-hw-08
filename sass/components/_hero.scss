@@ -21,31 +21,60 @@
 .hero {
 background-color: var(--footer-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(/images/image/Tab/1x/Hero_tab_1.jpg);
+    rgba(47, 48, 58, 0.4)),
+    url(../../images/image/Mob/1x/Hero_mob_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 118px 0px;
     max-width: 767px;
     margin: 0 auto;
-
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        ackground-color: var(--footer-background-color);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/image/Mob/2x/Hero_mob_2.jpg);
+        }
+    @media screen and (min-width:480px) {
+        background-color: var(--footer-background-color);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/image/Tab/1x/Hero_tab_1.jpg);
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        ackground-color: var(--footer-background-color);
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)),
+                            url(../../images/image/Tab/2x/Hero_tab_2.jpg);
+    }
+}
     @media screen and (min-width: 768px) {
             background-color: var(--footer-background-color);
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(/images/image/Desc/1x/Hero_desc_1.jpg);
+                url(../../images/image/Desc/1x/Hero_desc_1.jpg);
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        ackground-color: var(--footer-background-color);
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)),
+                            url(../../images/image/Desc/2x/Hero_desc_2.jpg);
             background-position: center;
             background-repeat: no-repeat;
             padding: 200px 0px;
-            max-width: 1199px;
-            margin: 0 auto;
+           
         }
-
+    }
     @media screen and (min-width: 1200px) {
-    background-color: var(--footer-background-color);
+    /*background-color: var(--footer-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(/images/image/Desc/1x/Hero_desc_1.jpg);
+        url(/images/image/Desc/1x/Hero_desc_1.jpg);*/
+
     background-position: center;
     background-repeat: no-repeat;
     padding: 200px 0px;

@@ -7,11 +7,8 @@ footer {
 .footer-tablet {
     @media screen and (min-width: 768px) {
        display:flex; 
-    }
-    
+    }    
 }
-
-
 
 footer .container {
     @media screen and (min-width: 1200px) {
@@ -47,6 +44,8 @@ footer .container {
 
     @media screen and (min-width: 1200px) {
     margin-left: 94px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -98,7 +97,9 @@ footer .container {
          @media screen and (min-width: 1200px) {
             width: 210px; 
             margin-left: 15px;
+            margin-bottom: 0;
          }
+         
 }
 
 .footer-list {
@@ -115,6 +116,9 @@ text-align: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 
     transition-property: color;
     transition-duration: 250ms;
@@ -169,10 +173,11 @@ text-align: center;
     }
          @media screen and (min-width: 1200px) {
              display: block;
-             width: 320px;
+             width: 330px;
              align-items: center;
              margin-left: 94px;
              margin-right: 12px;
+             margin-bottom: 0;
          }
 }
 
