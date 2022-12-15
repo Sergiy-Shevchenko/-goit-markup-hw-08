@@ -58,7 +58,7 @@
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: #757575;
-    padding-top: 10px;
+   
  
 @media screen and (min-width: 1200px) {
                 padding-top: 32px;
@@ -100,11 +100,11 @@
 }
 
 
-/*.site-auth .site-auth__item {
-@media screen and (min-width: 768px) {
-        margin-left: 50px;
-    }
-}*/
+.site-auth__item:not(:first-child) {
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        margin-top: 10px;
+    }    
+}
 
 
 .button-menu {
@@ -139,6 +139,7 @@
 .container.is-hidden {
     opacity: 0;
     pointer-events: none;
+    display: none;
 }
 
 

@@ -3,14 +3,34 @@
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    gap: 30px;
+    @media screen and (max-width: 1199px) {
+        /*margin:-15px;*/
+        /*gap:15px;*/
+    }
+        
+    
+    @media screen and (min-width: 1200px) {
+         gap: 30px;
+    }
+   
 }
+.link-subtitle {
+    @media screen and (max-width: 767px) {
+        width: 450px;
+        margin-bottom: 30px;
+    }
 
+     @media screen and (min-width: 768px) {
+        width: 345px;
+        margin: 10px;
+    }
+}
 .subtitle {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+   
 }
 
 .text {
@@ -24,7 +44,10 @@
 .link-img-portfol {
     display: block;
     text-decoration: none;
+    width: 100%;
+    @media screen and (min-width:1200px) {
     width: 370px;
+    }
 
     &:hover .text-portfol,
     &:focus .text-portfol {
@@ -77,5 +100,5 @@
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-top: 0px;
-    padding: 20px 24px;
+    padding: 20px 18px;
 }

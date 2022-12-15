@@ -52,22 +52,22 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
 /*--desk-top---*/
-@media screen and (min-width: 120px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -154,7 +154,6 @@ img {
   line-height: 1.1428;
   letter-spacing: 0.02em;
   color: #757575;
-  padding-top: 10px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -187,11 +186,12 @@ img {
   }
 }
 
-/*.site-auth .site-auth__item {
-@media screen and (min-width: 768px) {
-        margin-left: 50px;
-    }
-}*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-auth__item:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
 .button-menu {
   display: inline-flex;
   margin: 0;
@@ -223,6 +223,7 @@ img {
 .container.is-hidden {
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .mob-menu {
@@ -385,21 +386,27 @@ img {
   }
 }
 
-.logo {
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  font-family: "Raleway";
-  font-size: 24px;
-  line-height: 1.1666;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+@media screen and (max-width: 1199px) {
+  .logo {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-family: "Raleway";
+    font-size: 24px;
+    line-height: 1.1666;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
-    align-items: center;
+    display: flex;
+    text-decoration: none;
+    font-family: "Raleway";
+    letter-spacing: 0.03em;
+    color: #2196f3;
     font-size: 26px;
     line-height: 1.1923;
   }
@@ -697,7 +704,7 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .img {
+  .section.img {
     display: none;
   }
 }
@@ -707,8 +714,10 @@ img {
   justify-content: space-between;
 }
 
-.img {
-  padding-top: 0px;
+@media screen and (min-width: 1200px) {
+  .img {
+    padding-top: 20px;
+  }
 }
 
 .container-name {
@@ -763,7 +772,7 @@ img {
 .team-list__item {
   max-width: 450px;
   margin-top: 30px;
-  background-color: #f5f4fa;
+  background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   /*&:not(:last-child) {
@@ -940,9 +949,23 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
 
-.button-list .list + .list {
-  margin-left: 8px;
+.list:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-list .list + .list {
+    margin-left: 8px;
+  }
 }
 
 .button {
@@ -1129,7 +1152,30 @@ img {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  gap: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .link-title {
+    /*margin:-15px;*/
+    /*gap:15px;*/
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-title {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .link-subtitle {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .link-subtitle {
+    width: 345px;
+    margin: 10px;
+  }
 }
 
 .subtitle {
@@ -1150,7 +1196,12 @@ img {
 .link-img-portfol {
   display: block;
   text-decoration: none;
-  width: 370px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .link-img-portfol {
+    width: 370px;
+  }
 }
 .link-img-portfol:hover .text-portfol, .link-img-portfol:focus .text-portfol {
   transform: translateY(0);
@@ -1194,7 +1245,7 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-top: 0px;
-  padding: 20px 24px;
+  padding: 20px 18px;
 }
 
 footer {
